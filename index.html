@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Roberta di Camerino">
+    <meta name="author" content="Mentaltoy">
+    <!--<link rel="icon" href="../../favicon.ico">-->
+
+    <title>Roberta di Camerino - Welcome</title>
+
+
+    <!-- Josefin FONT -->
+    <link href='https://fonts.googleapis.com/css?family=Josefin+Sans:400,100,600,700' rel='stylesheet' type='text/css'>
+
+    <!-- Roboto FONT -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Arapey FONT -->
+    <link href='https://fonts.googleapis.com/css?family=Arapey:400,400italic' rel='stylesheet' type='text/css'>
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="dist/css/swiper.min.css">
+
+    <!-- Link Hover's CSS -->
+    <link rel="stylesheet" href="dist/css/hover-min.css">
+
+    <!-- RdC style -->
+    <link href="dist/css/rdc.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<!--Body with style for iOS/OS bounce-->
+<body style="overflow: hidden">
+
+<nav class="navbar navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                    aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar top-bar"></span>
+                <span class="icon-bar middle-bar"></span>
+                <span class="icon-bar bottom-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#" id="brand-btn"></a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav pull-right">
+                <li><a href="#" id="home-btn" class="active">Home</a></li>
+                <li><a href="#" id="about-btn">About</a></li>
+                <li><a href="#" id="kids-btn">Kids & Baby</a></li>
+                <li><a href="#" id="lookbook-btn">Lookbook</a></li>
+                <li><a href="#" id="news-btn">News</a></li>
+                <li><a href="#" id="contacts-btn" data-toggle="modal" data-target="#myModal">Contacts</a></li>
+                <!--<li><a href="#" class="lang-picker">-->
+                <!--<p>IT</p>-->
+
+                <!--<p>EN</p>-->
+                <!--</a></li>-->
+            </ul>
+        </div>
+        <!--/.nav-collapse -->
+    </div>
+</nav>
+
+<!-- Splash Screen -->
+<div class="rdc-splash">
+
+    <!--<div id='top' class="sipario top"></div>-->
+    <!--<div id='bottom' class="sipario bottom"></div>-->
+
+    <!--<div id="name-p">ROBERTA DI CAMERINO</div>-->
+    <div class="loading-text">LOADING</div>
+    <div id="percentage">0</div>
+    <!--<div id="name-v">VENEZIA</div>-->
+    <!--<div id="progress-bar"></div>-->
+
+    <!--<div class="bar-progress"></div>-->
+
+
+</div>
+<!-- End of Splash Screen -->
+
+
+<!-- Swiper -->
+<div class="swiper-container swiper-container-h">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+
+            <div class="container fit-height news-holder">
+                <div class="col-md-8 col-md-offset-2 fit-height">
+
+                    <div class="swiper-container-news scroll-wrapper swiper-container fit-height">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+
+                                <!-- News -->
+                                <div id="news"></div>
+
+                            </div>
+
+
+                        </div>
+                        <!-- Add Scroll Bar -->
+                        <div class="swiper-scrollbar"></div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="swiper-slide slide-look">
+            <!-- Lookbook -->
+            <div class="col-sm-8 col-sm-offset-2">
+                <div id="lookbook"></div>
+            </div>
+
+
+        </div>
+
+        <div class="swiper-slide slide-look">
+            <!-- Lookbook -->
+            <div class="col-sm-8 col-sm-offset-2">
+                <div id="kids"></div>
+            </div>
+
+
+        </div>
+
+        <div class="swiper-slide">
+            <!-- About -->
+
+            <div class="container fit-height about-holder">
+                <div class="col-md-8 col-md-offset-2 fit-height">
+
+                    <div class="swiper-container-about scroll-wrapper swiper-container fit-height">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+
+                                <!-- News -->
+                                <div id="about"></div>
+
+                            </div>
+
+
+                        </div>
+                        <!-- Add Scroll Bar -->
+                        <div class="swiper-scrollbar"></div>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="swiper-slide">
+            <!-- Home intro -->
+            <div id="home-intro-scroll-sensor"></div>
+            <dix id="home-intro"></dix>
+
+
+            <div class="home-container visible">
+                <div class="row">
+                    <div class="col-xs-10 col-xs-offset-1 col-md-4 col-md-offset-4 col-sm-4 col-sm-offset-4 col-md-4 col-md-offset-4">
+                        <div class="intro-logo-holder">
+                            <img src="dist/images/logo-intro-old.svg" class="img-responsive" alt="">
+                        </div>
+                        <div class="intro-logo-text text-center">
+                            <h3>"The birth of a Legend"</h3>
+
+                            <p class="text-intro-scroll">Please scroll down to discover the story of the brand and the
+                                new collection.<br> Please note that WebGL capabilities are required.</p>
+
+                        </div>
+                        <div class="icon-scroll">
+                            <div>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+            <div class="message-holder container">
+
+                <div class="row">
+                    <div class="message-1 col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-4">
+
+                        <div class="title-container-1"></div>
+
+
+                        <!--<h3>The Pattern Tradition</h3>-->
+
+                        <p>"I went home with the stuff inside a headscarf. The next day I could not find anything else
+                            as nice or as cheap. I bought the leather, a ball of twine and a curved needle. In a short
+                            time I had my old bag again. One day a policeman stopped me on the train for smuggling."</p>
+
+
+                    </div>
+
+                    <div class="message-2 col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-4">
+
+                        <div class="title-container-2"></div>
+
+                        <!--<h1>2</h1>-->
+
+                        <!--<h3>Attention to details</h3>-->
+                        <p>"The woman who sold me the bag, accused me of smuggling accessories from Itay into the Swiss
+                            market. The newspaper published the story next day and I received numerous job offers. That
+                            is how I started sewing bags."</p>
+
+
+                    </div>
+
+                    <div class="message-3 col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-4">
+
+                        <div class="title-container-3"></div>
+                        <!--<h1>3</h1>-->
+
+                        <!--<h3>The Bagonghi</h3>-->
+                        <p>"I sketched a bag, and then another one and yet another one. I remember several boxes set and
+                            jewelry boxes, but what inspired me more than any other shape was the essential design of a
+                            doctor bag. I then thought about small buckles and belts."</p>
+
+                    </div>
+                    <div class="message-4 col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-4">
+
+                        <div class="title-container-4"></div>
+
+                        <!--<h1>4</h1>-->
+
+                        <!--<h3>1944</h3>-->
+                        <p>"We made figured velvet for my bag. We could weave buckles and all the other decorations: I
+                            mean they would be part of the bag, but they would be an illusion, a trompe-l’oeil"</p>
+
+
+                    </div>
+                    <div class="message-5 col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-4">
+
+
+                        <div class="final-top">Check out<br> the new <br>collection</div>
+
+                        <div class="final-bottom"></div>
+
+                        <a href="#" id="lookbook-btn-intro" class="btn btn-primary">GO TO LOOKBOOK</a>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination swiper-pagination-h"></div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><img
+                        src="dist/images/close-thik.svg" alt=""/></button>
+                <h3 class="modal-title" id="myModalLabel">Contacts</h3>
+            </div>
+            <div class="modal-body">
+                <!-- Contacts -->
+                <div id="contacts"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<footer class="footer home">
+    <div class="container">
+        <p class="pull-left credits">© 2015 ROBERTA DI CAMERINO SRL - VIA PENNE, 111 - 66100 CHIETI - PIVA. CF.
+            03786260277 - T +39 02 76025820</p>
+        <ul class="list-unstyled pull-right list-inline">
+            <li class="social-label"><p class="pull-left">CONNECT WITH US</p></li>
+            <li><a href="#" class="social twitter"></a></li>
+            <li><a href="#" class="social facebook"></a></li>
+            <li><a href="#" class="social instagram"></a></li>
+        </ul>
+
+    </div>
+</footer>
+
+
+<a class="fwa" href="https://thefwa.com/cases/roberta-di-camerino-website" target="_blank">
+
+</a>
+
+
+<!-- Swiper JS -->
+<script src="dist/js/swiper.min.js"></script>
+
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="dist/js/bootstrap.min.js"></script>
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="dist/js/ie10-viewport-bug-workaround.js"></script>
+<script src="dist/js/jquery.spriteanim.js"></script>
+<script src="dist/js/TweenMax.min.js"></script>
+
+<script src="dist/js/handlebars-v4.0.5.js"></script>
+
+<!-- INTRO THREE JS -->
+<script src="dist/js/three.min.js"></script>
+<script src="dist/js/ColladaLoader.js"></script>
+<script src="dist/js/Detector.js"></script>
+<script src="dist/js/stats.min.js"></script>
+<script src="dist/js/inertiaScroll.js"></script>
+<script src="dist/js/rdc.js"></script>
+<script src="dist/js/home-intro.js"></script>
+
+<!-- AUDIO CONTROLS-->
+<!--<script src="dist/js/howler.min.js"></script>-->
+
+<script>
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-85374777-1', 'auto');
+    ga('send', 'pageview');
+
+</script>
+
+</body>
+
+
+</html>
